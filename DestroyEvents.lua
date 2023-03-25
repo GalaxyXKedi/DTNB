@@ -1,0 +1,6 @@
+game.ReplicatedStorage.ApplyImpulse:Destroy()
+game.ReplicatedStorage.CloseEvent:Destroy()
+game.ReplicatedStorage.TeleportEvent:Destroy()
+game.ReplicatedStorage.VoteNo:Destroy()
+game.ReplicatedStorage.VoteYes:Destroy()
+game.ReplicatedStorage.DefaultChatSystemChatEvents:Destroy()
