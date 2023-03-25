@@ -29,6 +29,7 @@ local Window = Rayfield:CreateWindow({
 local Character = Window:CreateTab("Character", 4483362458) -- Title, Image
 local Esp = Window:CreateTab("Visual", 4483362458)
 local Tlp = Window:CreateTab("Teleport", 4483362458)
+local Dst = Window:CreateTab("Destroyer", 4483362458)
 local Otr = Window:CreateTab("Other", 4483362458)
 local Section = Character:CreateSection("Character Cheats")
 local SpeedSlider = Character:CreateSlider({
@@ -1060,5 +1061,30 @@ local SecDex = Otr:CreateButton({
    Name = "Secure Dex",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+   end,
+})
+local DestW = Dst:CreateButton({
+   Name = "Destroy",
+   Callback = function()
+      game.Workspace.Bodyparts:Destroy()
+game.Workspace.House:Destroy()
+game.Workspace.Spawns:Destroy()
+game.Workspace.Spectate:Destroy()
+game.Workspace.Baseplate:Destroy()
+game.Workspace.OutsideBaseSupport:Destroy()
+game.Workspace.TeleportHouse:Destroy()
+game.Workspace.Cleanup:Destroy()
+   end,
+})
+local DestR = Dst:CreateButton({
+   Name = "Remove ReplicatedStroge",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/GalaxyXKedi/DTNB/main/DestroyReplicatedStroge.lua", true))()
+   end,
+})
+local DestSG = Dst:CreateButton({
+   Name = "Remove StarterGui",
+   Callback = function()
+      game.StarterGui.EBonus:Destroy()
    end,
 })
