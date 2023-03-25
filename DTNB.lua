@@ -28,6 +28,7 @@ local Window = Rayfield:CreateWindow({
 
 local Character = Window:CreateTab("Character", 4483362458) -- Title, Image
 local Esp = Window:CreateTab("Visual", 4483362458)
+local Tlp = Window:CreateTab("Teleport", 4483362458)
 local Otr = Window:CreateTab("Other", 4483362458)
 local Section = Character:CreateSection("Character Cheats")
 local SpeedSlider = Character:CreateSlider({
@@ -1005,6 +1006,42 @@ RunService:UnbindFromRenderStep(UpdateName);
  
 RunService:BindToRenderStep(GetDataName, 1, UpdatePlayerData);
 RunService:BindToRenderStep(UpdateName, 1, Update);
+   end,
+})
+local TlpH = Tlp:CreateButton({
+   Name = "Teleport House",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12.6357212, 4222.99805, -5.33216524, -0.00870901067, -2.15385154e-09, -0.999962091, -2.54439936e-08, 1, -1.93233296e-09, 0.999962091, 2.54261998e-08, -0.00870901067)
+   end,
+})
+local TlpS = Tlp:CreateButton({
+   Name = "Teleport Start Base",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-411.906952, 4279.79883, -27.7310352, 0.0616510846, -2.22353091e-09, -0.998097777, 3.85841155e-08, 1, 1.55517529e-10, 0.998097777, -3.85203052e-08, 0.0616510846)
+   end,
+})
+local TlpR = Tlp:CreateButton({
+   Name = "Teleport Regen Button",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-397.998199, 4280.19873, -27.3948212, -0.0436164364, -8.36001615e-11, -0.999048352, 1.34945644e-09, 1, -1.42594339e-10, 0.999048352, -1.3543916e-09, -0.0436164364)
+   end,
+})
+local TlpP = Tlp:CreateButton({
+   Name = "Teleport Prison",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-34.198391, 4190.59863, -103.12487, -0.998134792, -1.05477111e-08, 0.0610488728, -6.21216012e-09, 1, 7.12075021e-08, -0.0610488728, 7.06954424e-08, -0.998134792)
+   end,
+})
+local TlpSA = Tlp:CreateButton({
+   Name = "Teleport Secret Base",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9.86878967, 4201.39844, -90.4714279, -0.675589919, -4.39805241e-08, -0.737277627, 4.70364157e-08, 1, -1.02753496e-07, 0.737277627, -1.0409812e-07, -0.675589919)
+   end,
+})
+local TlpStr = Tlp:CreateButton({
+   Name = "Teleport Start Area",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-166, 4189.79883, -34, -3.61035583e-13, -8.48824442e-08, -1, -4.542051e-08, 1, -8.48824442e-08, 1, 4.542051e-08, -3.64890979e-13)
    end,
 })
 local InfY = Otr:CreateButton({
