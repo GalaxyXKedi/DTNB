@@ -1,0 +1,7 @@
+game.ReplicatedStroge.DefaultChatSystemChatEvents:Destroy()
+game.ReplicatedStroge.Disguise:Destroy()
+game.ReplicatedStroge.ApplyImpulse:Destroy()
+game.ReplicatedStroge.CloseEvent:Destroy()
+game.ReplicatedStroge.TeleportEvent:Destroy()
+game.ReplicatedStroge.VoteNo:Destroy()
+game.ReplicatedStroge.VoteYes:Destroy()
